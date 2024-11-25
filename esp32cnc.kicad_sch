@@ -2734,7 +2734,7 @@
 				)
 			)
 		)
-		(symbol "Interface_USB:CH330N"
+		(symbol "Interface_USB:CH340N"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2747,7 +2747,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "CH330N"
+			(property "Value" "CH340N"
 				(at 7.62 6.35 0)
 				(effects
 					(font
@@ -2756,7 +2756,7 @@
 					(justify right)
 				)
 			)
-			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(property "Footprint" "Package_SO:SOP-8_3.9x4.9mm_P1.27mm"
 				(at -3.81 19.05 0)
 				(effects
 					(font
@@ -2765,7 +2765,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.wch.cn/downloads/file/240.html"
+			(property "Datasheet" "https://aitendo3.sakura.ne.jp/aitendo_data/product_img/ic/inteface/CH340N/ch340n.pdf"
 				(at -2.54 5.08 0)
 				(effects
 					(font
@@ -2774,7 +2774,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "USB serial converter, UART, SOIC-8"
+			(property "Description" "USB serial converter, 2Mbps, UART, SOP-8"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2783,7 +2783,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "usb uart wch serial"
+			(property "ki_keywords" "USB UART Serial Converter Interface"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2792,7 +2792,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm*"
+			(property "ki_fp_filters" "SOP*3.9x4.9mm*P1.27mm*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2801,7 +2801,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "CH330N_0_1"
+			(symbol "CH340N_0_1"
 				(rectangle
 					(start -7.62 5.08)
 					(end 7.62 -7.62)
@@ -2814,7 +2814,7 @@
 					)
 				)
 			)
-			(symbol "CH330N_1_1"
+			(symbol "CH340N_1_1"
 				(pin bidirectional line
 					(at -10.16 -2.54 0)
 					(length 2.54)
@@ -4204,6 +4204,12 @@
 		(uuid "2b0d221b-5d95-4c0c-ade6-99beb3aaca23")
 	)
 	(junction
+		(at 232.41 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2cb91a48-94d3-44d2-9390-58c551e6142a")
+	)
+	(junction
 		(at 35.56 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4280,12 +4286,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9d8fa236-e3b7-4298-b8e3-50a821d6afc9")
-	)
-	(junction
-		(at 232.41 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b23d7096-a78e-4e51-a4a0-4f31e9091c61")
 	)
 	(junction
 		(at 240.03 93.98)
@@ -8798,6 +8798,92 @@
 		)
 	)
 	(symbol
+		(lib_id "Interface_USB:CH340N")
+		(at 224.79 97.79 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "86299967-1fe0-4ee0-a23c-3d7de2c2554c")
+		(property "Reference" "U5"
+			(at 234.95 91.4714 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CH340N"
+			(at 234.95 94.0114 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOP-8_3.9x4.9mm_P1.27mm"
+			(at 243.84 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://aitendo3.sakura.ne.jp/aitendo_data/product_img/ic/inteface/CH340N/ch340n.pdf"
+			(at 229.87 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "USB serial converter, 2Mbps, UART, SOP-8"
+			(at 224.79 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "1a3ead79-6b65-40ff-85eb-c13826162c84")
+		)
+		(pin "1"
+			(uuid "356b582c-b66e-40dd-9dee-d91728560b9a")
+		)
+		(pin "6"
+			(uuid "d38a44e7-3d3d-49db-a645-3ffe27b2a2f0")
+		)
+		(pin "5"
+			(uuid "0ee1986b-fadf-4353-86d9-41bba15b669c")
+		)
+		(pin "4"
+			(uuid "c1bc9e60-71ce-47fa-a9e3-b3e80b2687b9")
+		)
+		(pin "7"
+			(uuid "b2da2d01-4a07-46b0-90cf-fdcc578ecdec")
+		)
+		(pin "2"
+			(uuid "c57235ce-e77c-4cc6-89f1-665b674b31a9")
+		)
+		(pin "8"
+			(uuid "fb486f06-fb77-4762-ac18-2a7203847bfd")
+		)
+		(instances
+			(project ""
+				(path "/7af93405-7672-4ec9-bf48-095aefb21bf3"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 35.56 135.89 180)
 		(unit 1)
@@ -10012,92 +10098,6 @@
 			(project ""
 				(path "/7af93405-7672-4ec9-bf48-095aefb21bf3"
 					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Interface_USB:CH330N")
-		(at 224.79 97.79 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c20dc8ff-80a8-47b4-9547-a104c7c84a65")
-		(property "Reference" "U3"
-			(at 234.95 91.4714 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "CH330N"
-			(at 234.95 94.0114 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 243.84 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.wch.cn/downloads/file/240.html"
-			(at 229.87 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "USB serial converter, UART, SOIC-8"
-			(at 224.79 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "63ae6bf8-37c1-4d31-8c5b-3649ecd3b993")
-		)
-		(pin "4"
-			(uuid "612c29d8-046e-4801-bdf0-7ca99524bb35")
-		)
-		(pin "7"
-			(uuid "3e06f189-e65e-4577-9852-3c2a7d6143c5")
-		)
-		(pin "5"
-			(uuid "e30408a0-4074-4330-9f06-b73f781df17f")
-		)
-		(pin "3"
-			(uuid "558e0371-8e66-480e-abb7-75578a23f4be")
-		)
-		(pin "6"
-			(uuid "7d573902-2554-434d-a07e-f0c35704d9a8")
-		)
-		(pin "8"
-			(uuid "15a5300c-02fc-4c60-9d7e-7b3e0ce9a63c")
-		)
-		(pin "1"
-			(uuid "0ebf69f0-632c-4f1a-9372-756419564996")
-		)
-		(instances
-			(project "esp32cnc"
-				(path "/7af93405-7672-4ec9-bf48-095aefb21bf3"
-					(reference "U3")
 					(unit 1)
 				)
 			)
