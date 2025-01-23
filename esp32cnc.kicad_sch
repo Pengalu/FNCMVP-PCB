@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "DIY CNC Board")
-		(date "2024-11-11")
-		(rev "2")
+		(date "2025-01-23")
+		(rev "3")
 		(company "Pengalu")
 		(comment 1 "github.com/Pengalu")
 		(comment 2 ":D")
@@ -2119,6 +2119,127 @@
 				)
 			)
 		)
+		(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Driver_Motor:DRV8871DDA"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3746,6 +3867,151 @@
 				)
 			)
 		)
+		(symbol "Switch:SW_Push"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:+12V"
 			(power)
 			(pin_numbers hide)
@@ -4252,6 +4518,12 @@
 		(uuid "5a9bbda9-b82e-4b2b-bc21-e7a11ba84283")
 	)
 	(junction
+		(at 63.5 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5cd6fe99-47ca-4866-b822-2ce98b091ff9")
+	)
+	(junction
 		(at 240.03 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4372,16 +4644,8 @@
 		(uuid "bd9a85eb-1e05-48b5-9244-dab8f5587902")
 	)
 	(no_connect
-		(at 55.88 133.35)
-		(uuid "cd9612b7-46a6-4564-ab94-5781b829d2dd")
-	)
-	(no_connect
 		(at 39.37 80.01)
 		(uuid "d4c1d08d-7f50-44ea-8345-ad115e4921a9")
-	)
-	(no_connect
-		(at 69.85 39.37)
-		(uuid "d8f8df4b-ff96-48b2-9902-55a5cb004d95")
 	)
 	(wire
 		(pts
@@ -4732,6 +4996,16 @@
 			(type default)
 		)
 		(uuid "660a97fe-b665-4256-9829-b2c3d2bd9cb7")
+	)
+	(wire
+		(pts
+			(xy 63.5 133.35) (xy 63.5 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66ecd3e3-73ea-4d92-8191-d4cc181f0dc4")
 	)
 	(wire
 		(pts
@@ -6075,7 +6349,7 @@
 	)
 	(global_label "RX"
 		(shape input)
-		(at 69.85 46.99 0)
+		(at 69.85 41.91 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6085,7 +6359,7 @@
 		)
 		(uuid "b69782ad-82b4-4c8d-9492-4044780f19e6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 75.3147 46.99 0)
+			(at 75.3147 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6207,7 +6481,7 @@
 	)
 	(global_label "TX"
 		(shape input)
-		(at 69.85 41.91 0)
+		(at 69.85 46.99 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6217,7 +6491,7 @@
 		)
 		(uuid "d0f41c0b-f0dd-4db4-9b5a-1bdf7a152670")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 75.0123 41.91 0)
+			(at 75.0123 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8520,6 +8794,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 74.93 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "673af09c-3c9d-4f1e-9b4e-0935dc8425fc")
+		(property "Reference" "SW1"
+			(at 74.93 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 74.93 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 74.93 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 74.93 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 74.93 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f5ed58b6-12f9-4c5f-a840-d5f264f66988")
+		)
+		(pin "1"
+			(uuid "cd4078ad-fd88-4496-a974-17beabeeeff9")
+		)
+		(instances
+			(project ""
+				(path "/7af93405-7672-4ec9-bf48-095aefb21bf3"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Screw_Terminal_01x04")
 		(at 182.88 49.53 0)
 		(unit 1)
@@ -8589,6 +8931,73 @@
 			(project ""
 				(path "/7af93405-7672-4ec9-bf48-095aefb21bf3"
 					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 80.01 39.37 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7bb5f62f-10b8-4991-8ce8-f965857768ff")
+		(property "Reference" "#PWR028"
+			(at 86.36 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 83.82 39.3699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 80.01 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6fb09708-25d7-419f-897f-1035cda0d434")
+		)
+		(instances
+			(project ""
+				(path "/7af93405-7672-4ec9-bf48-095aefb21bf3"
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -9794,16 +10203,15 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 62.23 143.51 0)
+		(at 62.23 143.51 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b3abd7ae-735e-4683-80ac-c07ee6ea5c85")
 		(property "Reference" "#FLG03"
-			(at 62.23 141.605 0)
+			(at 62.23 145.415 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9812,11 +10220,12 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 62.23 138.43 0)
+			(at 60.706 148.082 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -10164,6 +10573,74 @@
 			(project "esp32cnc"
 				(path "/7af93405-7672-4ec9-bf48-095aefb21bf3"
 					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 59.69 133.35 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e24bfd86-c51e-4dcd-8767-7e6a92b30eec")
+		(property "Reference" "R1"
+			(at 59.69 127 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "18k"
+			(at 59.69 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 59.69 135.128 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 59.69 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 59.69 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cc33d15c-4cbc-4313-8eb2-9ee3052c65e9")
+		)
+		(pin "1"
+			(uuid "800a2314-38a8-49ce-8f80-36e518e6eb89")
+		)
+		(instances
+			(project ""
+				(path "/7af93405-7672-4ec9-bf48-095aefb21bf3"
+					(reference "R1")
 					(unit 1)
 				)
 			)
